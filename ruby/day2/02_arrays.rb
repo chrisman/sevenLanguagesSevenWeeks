@@ -33,4 +33,67 @@ puts queue.shift
 puts queue.shift
 
 ## Linked List
-# todo: impliment a linked list
+# how is one to implememt linked lists using just an array??
+
+class Node
+  attr_accessor :data, :next
+
+  def initialize(data, next_node)
+    @data = data
+    @next = next_node
+  end
+end
+
+class LinkedList
+  def initialize(data)
+    @head = Node.new(data, nil)
+  end
+
+  def add(val)
+    current = @head
+
+    while current.next != nil
+      current = current.next
+    end
+
+    current.next = Node.new(val, nil)
+  end
+
+  def remove(data)
+    current = @head
+    if current.data == data
+      @head = current.next
+    else
+      while (current.next != nil) && (current.next.data != data)
+        current = current.next
+      end
+      unless current.next == nil
+        current.next = current.next.next
+      end
+    end
+  end
+
+  def to_s
+    elements = []
+    current = @head
+
+    while current.next != nil
+      elements << current.data
+      current = current.next
+    end
+
+    elements << current.data
+  end
+end
+
+puts
+puts 'LINKED LIST'
+puts
+list = LinkedList.new('alaska')
+list.add('harper')
+list.add('banana')
+list.add('biden')
+list.add('jacob')
+list.remove('jacob')
+list.remove('banana')
+puts list.to_s
