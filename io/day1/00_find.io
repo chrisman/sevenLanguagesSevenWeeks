@@ -3,6 +3,7 @@ Find:
 + Some Io example problems
   + http://iolanguage.org/links.html
   + https://en.wikibooks.org/wiki/Io_Programming
+  + https://github.com/trending/io
 + An Io community that will answer questions
   + https://www.reddit.com/r/iolanguage/ (kinda deadish?)
   + http://stackoverflow.com/tags/iolanguage/info
