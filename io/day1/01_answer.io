@@ -14,9 +14,9 @@ writeln("two" .. 2)
 
 // Is 0 true or false? What about the empty string? Is nil true or false? Support your answer with code.
 
-writeln(true and 0)   // 0 is true
-writeln(true and "")  // "" is true
-writeln(true and nil) // nil is false
+if(0, "0 is true" println, "0 is false" println)
+if("", "\"\" is true" println, "\"\" is false" println)
+if(nil, "nil is true" println, "nil is false" println)
 
 
 // How can you tell what slots a prototype supports?
@@ -28,8 +28,8 @@ writeln(Pet slotNames)
 
 // What is the difference between = (equals), := (colon equals), and ::= (colon colon equals)? When would you use each one?
 /*
-`=`   - assign value to existing slot
-`:=`  - initialize a slot and assign a value
-`::=` - create a slot, create a setter, assign a value
+`=`   - "Update slot." assign value to existing slot
+`:=`  - "Set slot." initialize a slot and assign a value
+`::=` - "New slot." create a slot, create a setter, assign a value
 */
 
