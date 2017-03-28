@@ -4,8 +4,7 @@ puts 'Enter your guess!'
 guess = gets.to_i
 
 unless guess.eql? secret
-  puts 'Too low!' if guess < secret
-  puts 'Too high!' if guess > secret
+  puts "Too #{guess > secret ? 'high' : 'low'}!"
   guess = gets.to_i
 end
 
