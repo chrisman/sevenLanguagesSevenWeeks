@@ -43,8 +43,8 @@ class RubyCsv  # no inheritance! You can mix it in
   acts_as_csv
 
   # step 1.5: define each block
-  def each &block
-    @csv_contents.each {|row| block.call(row.first.split(','))}
+  def each
+    @csv_contents.each {|row| yield row.first.split(',')}
   end
 end
 
