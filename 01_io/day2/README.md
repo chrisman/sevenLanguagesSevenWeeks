@@ -7,6 +7,6 @@ Do:
 3. Write a program to add up all of the numbers in a two-dimensional array.
 4. Add a slot called myAverage to a list that computes the average of all the numbers in a list. What happens if there are no numbers in a list? (Bonus: Raise an Io exception if any item in the list is not a number.)
 5. Write a prototype for a two-dimensional list. The dim(x, y) method should allocate a list of y lists that are x elements long. set(x, y, value) should set a value, and get(x, y) should return that value.
-6. Bonus: Write a transpose method so that (new_matrix get(y, x)) == matrix get(x, y) on the original list.
-7. Write the matrix to a file, and read a matrix from a file.
+    Bonus: Write a transpose method so that (new_matrix get(y, x)) == matrix get(x, y) on the original list.
+    Write the matrix to a file, and read a matrix from a file.
 8. Write a program that gives you ten tries to guess a random number from 1–100. If you would like, give a hint of “hotter” or “colder” after the first guess.
