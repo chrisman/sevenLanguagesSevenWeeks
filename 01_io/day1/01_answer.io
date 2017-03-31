@@ -1,7 +1,3 @@
-/*
-Answer:
-*/
-
 // Evaluate 1 + 1 and then 1 + "one". Is Io strongly typed or weakly typed? Support your answer with code.
 // Strongly typed
 

@@ -15,8 +15,8 @@ class Tree
     children.each {|c| c.visit_all &block}
   end
 
-  def visit(&block) 
-    block.call self
+  def visit
+    yield self
   end
 end
 

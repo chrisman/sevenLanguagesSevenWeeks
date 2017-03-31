@@ -5,7 +5,10 @@ Do:
 */
 
 Pet := Object clone
-Pet vocabulary := "bow wow oh wow oh boy oh wow oh wow"
+Pet vocabulary := "grumble mumble rumble bumble"
 Pet speak := method("\"#{vocabulary}\"" interpolate)
 
-"this pet goes #{Pet speak}" interpolate println
+Dog := Pet clone
+Dog vocabulary := "bow wow oh wow oh boy oh wow oh wow"
+
+"the #{Dog type} goes #{Dog speak}" interpolate println
