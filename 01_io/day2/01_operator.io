@@ -3,6 +3,6 @@
 ( 1 / 0 ) println // inf
 
 originalDiv := Number getSlot("/")
-Number / := method(n, if(n == 0, 0, call sender originalDiv(n)))
+Number / := method(n, if(n == 0, 0, call target originalDiv(n)))
 
 ( 1 / 0 ) println // 0
