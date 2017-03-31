@@ -6,15 +6,33 @@
     `book({"author": "Tate"}...)` would print `<book author="Tate">`
 */
 
+OperatorTable addAssignOperator(":", "atParseHash")
 
 Builder := Object clone do(
   indent := ""
 
-  forward := method(
-    name := call message name
-    args := call message arguments
+  atParseHash := method(
+    key   := call evalArgAt(0) asMutable removeSeq("\"")
+    value := call evalArgAt(1)
+    " #{key}=\"#{value}\"" interpolate
+  )
 
-    writeln(indent, "<", name, ">")
+  curlyBrackets := method(
+    call message arguments map(arg,
+      self doMessage(arg)
+    ) join("")
+  )
+
+  forward := method(
+    name  := call message name
+    args  := call message arguments
+    attrs := ""
+
+    if(args size > 0 and args at(0) name == "curlyBrackets",
+      attrs = doMessage(args removeFirst)
+    )
+
+    writeln(indent, "<", name, attrs, ">")
 
     args foreach(arg,
       indent = indent .. "  "
@@ -27,13 +45,7 @@ Builder := Object clone do(
   )
 )
 
-
-Builder html(
-  head(
-    title("My Website")
-  )
-  body(
-    h1("Welcome to my website"),
-    div("content")
-  )
-)
+/*
+moving the "site" to a separate file is necessary so that the OperatorTable is updated
+*/
+doFile("site.txt")
