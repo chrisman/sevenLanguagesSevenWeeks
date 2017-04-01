@@ -7,6 +7,20 @@
 
 ## Contents
 
-* [ruby](ruby) is like Mary Poppins.
+* [ruby](01_ruby) is like _Mary Poppins_.
 
-* [Io](io) is like Ferris Bueller.
+    * syntactic sugar: ⭐️⭐️⭐️⭐️⭐️
+
+    * OOP: ⭐️⭐️⭐️⭐️⭐️
+
+    * community size: ⭐️⭐️⭐️⭐️⭐️
+
+* [Io](02_io) is like _Ferris Bueller_.
+
+    * minimalist syntax: ⭐️⭐️⭐️⭐️⭐️
+
+    * introspection and reflection: ⭐️⭐️⭐️⭐️⭐️
+    
+    * community size: ⭐️
+
+* [Prolog](03_prolog) is like _Rainman_.
