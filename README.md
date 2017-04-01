@@ -7,7 +7,7 @@
 
 ## Contents
 
-* [ruby](01_ruby) is like _Mary Poppins_.
+* [ruby](00_ruby) is like _Mary Poppins_.
 
     * syntactic sugar: ⭐️⭐️⭐️⭐️⭐️
 
@@ -15,7 +15,7 @@
 
     * community size: ⭐️⭐️⭐️⭐️⭐️
 
-* [Io](02_io) is like _Ferris Bueller_.
+* [Io](01_io) is like _Ferris Bueller_.
 
     * minimalist syntax: ⭐️⭐️⭐️⭐️⭐️
 
@@ -23,4 +23,4 @@
     
     * community size: ⭐️
 
-* [Prolog](03_prolog) is like _Rainman_.
+* [Prolog](02_prolog) is like _Rainman_.
